@@ -3,9 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <title>Formulario</title>
 </head>
 <body>
-    
+    <h1>Formulario de adopción</h1>
+    <h3>¿Estás buscando un compañero de aventuras?</h3>
+    <p> Llena el siguiente formulario para tener la oportunidad de tener a un peludito contigo. Este formulario es completamente confidencial, es importante resaltar que los solicitantes deben ser personas <strong> mayores de edad </strong>.</p>
+<form action="procesar_formulario" method="post">
+   <div id="primerasecc">
+        <label id="nombre">Nombre:
+            <input type="text" name="nombre" placeholder="Paulina" id="nombre">
+        </label>
+        <label id="apellidos"> Apellido(s):
+            <input type="text" name="apellidos" placeholder="Mendoza" id="apellidos">
+        </label>
+        <br><br>
+        <label id="fecha">Fecha:
+            <input id=fecha type="date" name="fecha">
+        </label>
+    </div>
+    <br>
+    <div id="segundasecc">
+    <label for="direccion"> Dirección: 
+        <input type="text" id="direccion" name="direccion" placeholder="Calle 2 #215 x 31A Col. Jardínes de Mérida">
+    </label>
+    <br><br>
+    <label for="edad"> Edad: 
+        <input type="number" id="edad" name="edad" min="18">
+    </label>
+    <br>
+    <br>
+    <label for="estudios">Nivel de Estudios:</label>
+    <select id="estudios" name="estudios" required>
+        <option value="selecciona">-- Selecciona --</option>
+        <option value="primaria">Primaria</option>
+        <option value="secundaria">Secundaria</option>
+        <option value="preparatoria">Preparatoria</option>
+        <option value="universidad">Universidad</option>
+    </select>    
+    <br>
+    <br>
+    <label for="ocupacion"> Ocupación:
+        <input type="text" id="ocupacion" name="ocupación" placeholder="trabajador">
+    </label>
+    <br><br>
+    <label for="email"> Email:
+        <input type="email" id="email" name="correo" placeholder="direccioncorreo@gmail.com">
+    </label>
+
+    <label for="tel"> Teléfono:
+        <input type="tel" id="tel" name="teléfono">
+    </label>
+    </div>
+    <p>A continuación proporciona los datos de un co-responsable que se haría cargo de la mascota en cado de que el adoptante no pueda hacer por cuestiones de salud o fuerza mayor.</p>
+    <label for="nombcontact"> Nombre:
+    <input id="nombcontact" type="text" name="nombre" placeholder="Nombre(s)">
+    </label>
+    <br><br>
+    <label for="apellcontact"> Apellido(s):
+    <input id="apellcontact" type="text" name="apellidos" placeholder="Apellido(s)">
+    </label>
+    <br><br>
+    <label for="tel"> Teléfono:
+        <input type="tel" id="tel" name="teléfono">
+    </label>
+    <hr>
+    <p>En esta sección contesta de manera sincera, ya que son factores decisivos para la adopción.</p>
+    <label for="porque"> ¿Por qué deseas adoptar?
+       <br>
+        <textarea name="porque" id="porque" col="30" rows="10" placeholder="Redacta tu respuesta aquí"> </textarea>
+    </label>
+    <br>
+    <label for="otros"> ¿Actualmente tienes otras mascotas?
+        <select id="otros" name="otros" required>
+            <option value="selecciona">-- Selecciona --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select> 
+    </label>
+    <br><br>
+    <label for="cuantos"> En caso de responder sí, ¿cuántos?: 
+        <input type="number" id="cuantos" name="cuantos" min="0">
+    </label>
+    <br><br>
+    <label for="otros"> ¿Estas mascotas recibirán bien al nuevo peludito?
+        <select id="otros" name="otros" required>
+            <option value="selecciona">-- Selecciona --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select> 
+    </label>
+    <br><br>
+    <label for="esterilizados"> ¿Tus mascotas están esterilizadas?
+        <select id="esterilizados" name="esterilizados">
+            <option value="selecciona">-- Selecciona --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select> 
+    </label>
+    <br><br>
+    <label for="2esterilizados"> En caso de responder no, ¿por qué?: 
+       <br>
+        <textarea name="2esterilizados" id="2esterilizados" col="30" rows="10" placeholder="Redacta tu respuesta aquí"> </textarea>
+    </label>
+    <br><br>
+    <label for="factor1"> ¿Por qué deseas adoptar a esta mascota en especial?: 
+        <br>
+        <textarea name="factor1" id="factor1" col="30" rows="10" placeholder="Redacta tu respuesta aquí"> </textarea>
+    </label>
+    <br><br>
+    <label for="factor2"> ¿Tu casa tiene jardín?
+        <select id="factor2" name="factor2">
+            <option value="selecciona">-- Selecciona --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select> 
+    </label>
+    <br><br>
+    <label for="cuantos2"> En caso de responder sí, ¿cuántos m2 tiene?: 
+        <input type="number" id="cuantos2" name="cuantos2" min="0">
+    </label>
+    <br><br>
+    <label for="factor2"> ¿Tu casa está bardeada?
+        <select id="factor2" name="factor2">
+            <option value="selecciona">-- Selecciona --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select> 
+    </label>
+    <p>Para finalizar con tu solicitud responde las siguientes preguntas que serán <strong>críticas</strong> para la aprobación de tu solicitud.</p>
+    <br>
+        <label for="factor2"> ¿Estás de acuerdo con que se haga una visita periódica a tu domicilio para ver cómo se encuentra la mascota?
+        <select id="factor2" name="factor2">
+            <option value="selecciona">-- Selecciona --</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select> 
+    </label>
+    <br><br>
+    <button type="submit"> Enviar solicitud a revisión </button>
+</form>
 </body>
 </html>
