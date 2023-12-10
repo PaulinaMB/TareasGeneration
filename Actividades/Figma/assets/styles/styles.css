@@ -1,0 +1,196 @@
+.div1{
+    display:grid; /*Esto hará que pueda acomodar en rejilla todos mis elementos hijos dentro de este div*/
+    grid-template-columns: 9;
+    grid-template-rows: 12;
+
+}
+body{
+    background-color: white; /*Para que todo mi fondo se vea blanco*/
+}
+
+.blanco {
+    grid-column: 1/8; /*La línea de inicio es 1 y la final es 8. Ocupará más de la mitad de pantalla*/
+    grid-row: 1/13;
+    background: #ffffff;
+    background-size: contain;
+    justify-content: center;
+}
+
+.developer{
+    grid-column: 8/9; /*La línea de inicio es 8 y la final es 9. Ocupará la parte derecha de la pantalla*/
+    grid-row: 1/13;
+    background-size: contain;
+    background: linear-gradient(90deg, rgba(180, 146, 253, 0.3) 0%, rgba(173, 78, 245, 0.9543) 100%);
+    justify-content: center; /*Pensé que ajustaría todo al centro y no :c*/
+
+} 
+
+#ajustarimg{ /*contenedor para reducir la imagen*/
+    margin-top: 150px; /*con el margin en top y left ajusté el contenedor de la imagen al centro*/
+    margin-left: 70px;  
+    justify-content: center; /*para que quedará en el centro del contenedor la imagen*/
+    width: 300px;  /*medidas del devoloper para verse como en figma*/
+    height: 450px; 
+}
+
+#imgdeveloper{ 
+    max-width: 100%; /*para que la imagen se muestre al 100% en el contenedor y no solo una parte*/
+}
+
+
+.sombra{
+    margin-top: 100px;  /*manualmente ajusté el contenedor que haría de sombra usando margin*/
+    margin-left: 200px;
+    width: 400px; /*medidas para que se viera el contenedor que tiene la sombra*/
+    height: 380px; 
+    border: 15px solid white; /*para centrar los contenedores hijos de este*/
+    box-shadow: 20px 20px 60px 0px rgba(94, 94, 94, 0.15), -20px -20px 60px 0px rgba(94, 94, 94, 0.15);
+    justify-content: center;
+}
+
+.create{    /*Esta es la parte del create your account*/
+    margin-top: 20px;  /*Manualmente con margin ajusté la posición en el contenedor sombra*/
+    margin-left: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10px; /*Tamaño de letra ajustado a mi pantalla*/
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.botones{  /*Este contenedor pondrá en una línea el botón de google y el de apple*/
+    display: flex;
+}
+
+#google{ /*Este id es para el botón de google, le daré estilo*/
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #1D1D1D;
+    font-size: 15px;
+    font-family: "Montserrat";
+    width: 150px;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.textgoogle{ /*Este contenedor tiene imagen y texto. lo que quiero lograr es que se pongan en línea el texto y el icono*/
+    display:flex;
+}
+
+
+#apple{ /*Este id es para el botón de apple, le daré estilo*/
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #1D1D1D;
+    font-size: 15px;
+    font-family: "Montserrat";
+    width: 150px;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.textapple{ /*Este contenedor tiene imagen y texto. lo que quiero lograr es que se pongan en línea el texto y el icono*/
+    display:flex;
+}
+
+
+#loggoogle{ /*Este id es para el ícono de google*/
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px;
+
+}
+
+#logapple{ /*Este id es para el ícono de apple*/
+    width: 20px; 
+    height: 24px;  
+    margin-right: 5px;
+}
+
+.vacio{ /*este contenedor tendrá dos cantenedores que sean vacíos para hacer líneas y en medio uno que tenga la palabra "or", pero aquí le daré formato al div que contendrá "or"*/
+    display:flex;
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#lineavacia1{ /*con este div haré una línea vacía*/
+    margin-left: 20px;  /*Manualmente con margin ajusté la posición de la línea*/
+    margin-top:5px;
+    width: 150px;
+    height: 1px;
+    background: #6667B0;
+}
+
+#textoor{
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#lineavacia2{ /*con este div haré una línea vacía*/
+    margin-left: 20px;  /*Manualmente con margin ajusté la posición de la línea*/
+    margin-top:5px;
+    width: 150px;
+    height: 1px;
+    background: #6667B0;
+}
+
+label{ /*se le dará estilo a la etiqueta label ya que se repite en email y password*/
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #1D1D1D;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+input{ /*se le dará estilo a la etiqueta input ya que se repite en email y password*/
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #1D1D1D;
+    background: rgba(244, 241, 255, 0.00);
+    color: #6667B0;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.login{ /*estilos del botón login*/
+    border-radius: 6px;
+    background: #6B43FF;
+    width: 350px;
+    height: 35px;
+    margin-left: 20px;
+    color: #F4F1FF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+p{ /*texto debajo del login*/
+    display: flex;
+    flex-direction: row-reverse;
+    color: #6B43FF;
+    text-align: right;
+    font-family:'Montserrat', sans-serif;;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

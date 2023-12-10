@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Diseño de LogIn</title>
+    <!--Conectar con google para tener familia de texto Monsetrrat y Monsetrrat Alternates-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+    <!--Conectar con google para tener familia de texto Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="div1">
+    <div class="blanco"> <!--Este div hace un espacio en blanco-->
+        <div class="sombra"> <!--Este div crea un recuadro con sombra y formulario-->
+            <!-- <div class="formulario"> Este div contendrá el formulario -->
+                <form>
+                <div class="create">  
+                    <h1>Create your account</h1> 
+                </div>  
+                 <div class="botones"> <!--Este div tendrá a los botones-->
+                    <button type="submit"  id="google"> <!--con este id daré estilos al botón-->
+                            <div class="textgoogle"> <!--Este div contiene el icono y el texto google, con este pondré en línea el texto y el ícono-->
+                            <img src="./assets/images/Google-logo.png" id="loggoogle">Use Google <!--Con este orden se pone primero el ícono y luego las letras-->
+                            </div>
+                    </button>
+                    
+                    <diV > <!--Este div contiene al botón apple-->
+                        <button type="submit" id="apple" >
+                            <div class="textapple">
+                            <img src="./assets/images/Apple_logo_black.svg" id="logapple">Use Apple
+                            </div>
+                        </button>
+                    </diV>
+                </div> 
+                <div class="vacio"> <!--Contenedores vacíos para hacer líneas-->
+                    <div id="lineavacia1"></div> 
+                        <div id="textoor">or</div> 
+                    <div id="lineavacia2"></div>
+                </div>
+                    <div><!--Este div contiene la sección email-->
+                        <label for="email">Email: <br> <!--Para bajar el input se puso un br-->
+                            <input type="email" name="correo" placeholder="Your email" id="email">
+                        </label>
+                    </div> 
+                    <div> <!--Este div contiene la sección password-->
+                        <label for="contrasena">Password: <br> <!--Para bajar el input se puso un br-->
+                            <input type="password" name="contraseña" placeholder="Your password" id="contrasena">
+                        </label>
+                    </div>
+                    <div> <!--Este div contiene el botón login-->
+                        <button type="submit" class="login">Login</button>
+                    </div>
+                    <p>Already have an account?</p>
+                </form>
+            <!-- </div> -->
+        </div>
+    </div>   
+    <div class="developer"> <!--Este div contiene la imagen del developer-->
+        <div id="ajustarimg">
+        <img id="imgdeveloper" src="./assets/images/developer_male-removebg-preview.png" alt="developer">
+        </div>
+    </div> 
+</div>
+
+
+
+</body>
+</html>
