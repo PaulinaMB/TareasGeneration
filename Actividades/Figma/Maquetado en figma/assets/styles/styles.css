@@ -1,0 +1,238 @@
+.uno{ /*Dará un color blanco a todo el viewport*/
+    width: 100%; 
+    height: 100%; 
+    position: relative; /*Será relativo para superponer elementos sobre él*/
+    background: white;
+}
+.degradado{ /*este contenedor tendrá el degradado*/
+    width: 587px; 
+    height: 1032px; 
+    left: 853px; /*se usa un left para que empuje el contenedor 853px a la izquierda de manera que queda alineado a la derecha*/
+    top: 0px; 
+    position: absolute; /*es absoluto para poder posicionarlo a la derecha*/
+    background: linear-gradient(90deg, rgba(180, 146, 253, 0.30) 0%, rgba(173, 78, 245, 0.95) 100%);
+}
+.developer{ /*es la imagen del developer*/
+    width: 407px; 
+    height: 505px; 
+    left: 970px; /*se usan left y top para que empujen la imagen hacia abajo y a la derecha dentro del contenedor dos*/
+    top: 259px; 
+    position: absolute; /*es absoluto para poder posicionarlo a la derecha*/
+}
+.formulario{ /*Este contenedor albergará los datos del formulario*/
+    width: 452px; 
+    height: 603px; 
+    left: 216px; 
+    top: 217px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    background: rgba(217, 217, 217, 0);
+}
+.sombra{ /*Este contenedor hará la ilusión de una sombra y brindará márgenes que permitirán al contenedor formulario estár centrado*/
+    width: 567px; 
+    height: 734px; 
+    left: 153px; 
+    top: 144px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    opacity: 0.70; 
+    background: white; 
+    box-shadow: 20px 20px 60px rgba(93.50, 93.50, 93.50, 0.15);
+}
+.create{ /*Este contenedor servirá para posicionar el texto "create your account" dentro del contenedor formulario*/
+    width: 400px; 
+    height: 57px; 
+    left: 216px; 
+    top: 217px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: #1D1D1D; 
+    font-size: 36px;
+    font-family: 'Montserrat Alternates'; 
+    font-weight: 600; 
+    word-wrap: break-word;
+}
+.google{ /*es la imagen de google*/
+    width: 40px; 
+    height: 41px; 
+    left: 232px; 
+    top: 311px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+}
+.botgoogle{ /*es el texto del botón de google*/
+    width: 140px; 
+    height: 27px; 
+    left: 281px; 
+    top: 318px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: #1D1D1D; 
+    font-size: 22px; 
+    font-family: 'Montserrat';
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+.apple{ /*es la imagen de google*/
+    width: 40px; 
+    height: 41px; 
+    left: 485px; 
+    top: 311px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+}
+.botapple{ /*es el texto del botón de apple*/
+    width: 120px; 
+    height: 32px; 
+    left: 535px; 
+    top: 318px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: #1D1D1D; 
+    font-size: 22px; 
+    font-family: 'Montserrat';
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+.botcompgoogle{ /*Le dará un borde al conjunto de ícono + texto de google*/
+    width: 205px; 
+    height: 70px; 
+    left: 216px; 
+    top: 296px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    background: rgba(244, 241, 255, 0); 
+    border-radius: 12px; 
+    border: 1px #1D1D1D solid;
+}
+.botcompapple{ /*Le dará un borde al conjunto de ícono + texto de apple*/
+    width: 205px; 
+    height: 70px; 
+    left: 463px; 
+    top: 296px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    background: rgba(244, 241, 255, 0);
+    border-radius: 12px; 
+    border: 1px #1D1D1D solid;
+}
+.textoemail{
+    width: 205px; 
+    height: 32px; 
+    left: 216px; 
+    top: 426px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: #1D1D1D; 
+    font-size: 25px; 
+    font-family: 'Montserrat';
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+.inputemail{
+    width: 452px; 
+    height: 67px; 
+    left: 216px; 
+    top: 458px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    /* background: rgba(244, 241, 255, 0);  */
+    border-radius: 12px; 
+    border: 1px #1D1D1D solid;
+}
+.placeholderemail{
+    width: 199px; 
+    height: 37px; 
+    left: 243px; 
+    top: 473px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: #6667B0; 
+    font-size: 25px; 
+    font-family: 'Montserrat'; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+.textopassword{
+    width: 205px; 
+    height: 32px; 
+    left: 216px; 
+    top: 547px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: #1D1D1D; 
+    font-size: 25px; 
+    font-family: 'Montserrat'; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+.inputpassword{
+    width: 452px; 
+    height: 67px; 
+    left: 216px; 
+    top: 579px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    /* background: rgba(244, 241, 255, 0);  */
+    border-radius: 12px; 
+    border: 1px #1D1D1D solid;
+}
+.placeholderpassword{
+    width: 221px; 
+    height: 42px; 
+    left: 243px; 
+    top: 591px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: #6667B0; 
+    font-size: 25px; 
+    font-family: 'Montserrat'; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
+.botlogin{
+    width: 452px; 
+    height: 67px; 
+    left: 216px; 
+    top: 697px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    background: #6B43FF; 
+    border-radius: 12px;
+}
+.textologin{
+    width: 381px; 
+    height: 59px; 
+    left: 252px; 
+    top: 701px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    text-align: center; 
+    color: #F4F1FF; 
+    font-size: 30px; 
+    font-family: 'Roboto'; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+.account{
+    width: 321px; 
+    height: 47px; 
+    left: 353px; 
+    top: 773px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    text-align: right; 
+    color: #6B43FF; font-size: 22px; 
+    font-family: 'Montserrat';
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+.linea1{
+    width: 205px; 
+    height: 0px; 
+    left: 216px; 
+    top: 391px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    border: 1px #6667B0 solid;
+}
+.linea2{
+    width: 205px; 
+    height: 0px; 
+    left: 463px; 
+    top: 391px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    border: 1px #6667B0 solid;
+}
+.or{
+    width: 54px; 
+    height: 44px; 
+    left: 431px; 
+    top: 375px; 
+    position: absolute; /*es absoluto para poder posicionarlo*/
+    color: black; font-size: 22px; 
+    font-family: 'Montserrat'; 
+    font-weight: 500; 
+    word-wrap: break-word;
+}
