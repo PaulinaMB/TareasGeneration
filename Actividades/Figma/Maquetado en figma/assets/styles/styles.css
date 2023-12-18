@@ -4,10 +4,10 @@
     position: relative; /*Será relativo para superponer elementos sobre él*/
     background: white;
 }
-.degradado{ /*este contenedor tendrá el degradado*/
+#degradado{ /*este contenedor tendrá el degradado*/
     width: 587px; 
-    height: 1032px; 
-    left: 853px; /*se usa un left para que empuje el contenedor 853px a la izquierda de manera que queda alineado a la derecha*/
+    height: 900px; 
+    left: 1150px; /*se usa un left para que empuje el contenedor 853px a la izquierda de manera que queda alineado a la derecha*/
     top: 0px; 
     position: absolute; /*es absoluto para poder posicionarlo a la derecha*/
     background: linear-gradient(90deg, rgba(180, 146, 253, 0.30) 0%, rgba(173, 78, 245, 0.95) 100%);
@@ -15,14 +15,14 @@
 .developer{ /*es la imagen del developer*/
     width: 407px; 
     height: 505px; 
-    left: 970px; /*se usan left y top para que empujen la imagen hacia abajo y a la derecha dentro del contenedor dos*/
+    left: 1250px; /*se usan left y top para que empujen la imagen hacia abajo y a la derecha dentro del contenedor dos*/
     top: 259px; 
     position: absolute; /*es absoluto para poder posicionarlo a la derecha*/
 }
 .formulario{ /*Este contenedor albergará los datos del formulario*/
     width: 452px; 
     height: 603px; 
-    left: 216px; 
+    left: 316px; 
     top: 217px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     background: rgba(217, 217, 217, 0);
@@ -30,7 +30,7 @@
 .sombra{ /*Este contenedor hará la ilusión de una sombra y brindará márgenes que permitirán al contenedor formulario estár centrado*/
     width: 567px; 
     height: 734px; 
-    left: 153px; 
+    left: 253px; 
     top: 144px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     opacity: 0.70; 
@@ -40,7 +40,7 @@
 .create{ /*Este contenedor servirá para posicionar el texto "create your account" dentro del contenedor formulario*/
     width: 400px; 
     height: 57px; 
-    left: 216px; 
+    left: 316px; 
     top: 217px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: #1D1D1D; 
@@ -52,14 +52,14 @@
 .google{ /*es la imagen de google*/
     width: 40px; 
     height: 41px; 
-    left: 232px; 
+    left: 332px; 
     top: 311px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
 }
 .botgoogle{ /*es el texto del botón de google*/
     width: 140px; 
     height: 27px; 
-    left: 281px; 
+    left: 381px; 
     top: 318px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: #1D1D1D; 
@@ -68,17 +68,17 @@
     font-weight: 500; 
     word-wrap: break-word;
 }
-.apple{ /*es la imagen de google*/
+.apple{ /*es la imagen de apple*/
     width: 40px; 
     height: 41px; 
-    left: 485px; 
+    left: 585px; 
     top: 311px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
 }
 .botapple{ /*es el texto del botón de apple*/
     width: 120px; 
     height: 32px; 
-    left: 535px; 
+    left: 635px; 
     top: 318px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: #1D1D1D; 
@@ -90,7 +90,7 @@
 .botcompgoogle{ /*Le dará un borde al conjunto de ícono + texto de google*/
     width: 205px; 
     height: 70px; 
-    left: 216px; 
+    left: 316px; 
     top: 296px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     background: rgba(244, 241, 255, 0); 
@@ -100,7 +100,7 @@
 .botcompapple{ /*Le dará un borde al conjunto de ícono + texto de apple*/
     width: 205px; 
     height: 70px; 
-    left: 463px; 
+    left: 570px; 
     top: 296px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     background: rgba(244, 241, 255, 0);
@@ -110,7 +110,7 @@
 .textoemail{
     width: 205px; 
     height: 32px; 
-    left: 216px; 
+    left: 316px; 
     top: 426px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: #1D1D1D; 
@@ -122,7 +122,7 @@
 .inputemail{
     width: 452px; 
     height: 67px; 
-    left: 216px; 
+    left: 316px; 
     top: 458px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     /* background: rgba(244, 241, 255, 0);  */
@@ -132,7 +132,7 @@
 .placeholderemail{
     width: 199px; 
     height: 37px; 
-    left: 243px; 
+    left: 343px; 
     top: 473px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: #6667B0; 
@@ -144,7 +144,7 @@
 .textopassword{
     width: 205px; 
     height: 32px; 
-    left: 216px; 
+    left: 316px; 
     top: 547px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: #1D1D1D; 
@@ -156,7 +156,7 @@
 .inputpassword{
     width: 452px; 
     height: 67px; 
-    left: 216px; 
+    left: 316px; 
     top: 579px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     /* background: rgba(244, 241, 255, 0);  */
@@ -166,7 +166,7 @@
 .placeholderpassword{
     width: 221px; 
     height: 42px; 
-    left: 243px; 
+    left: 343px; 
     top: 591px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: #6667B0; 
@@ -178,7 +178,7 @@
 .botlogin{
     width: 452px; 
     height: 67px; 
-    left: 216px; 
+    left: 316px; 
     top: 697px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     background: #6B43FF; 
@@ -187,7 +187,7 @@
 .textologin{
     width: 381px; 
     height: 59px; 
-    left: 252px; 
+    left: 352px; 
     top: 701px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     text-align: center; 
@@ -200,7 +200,7 @@
 .account{
     width: 321px; 
     height: 47px; 
-    left: 353px; 
+    left: 453px; 
     top: 773px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     text-align: right; 
@@ -212,7 +212,7 @@
 .linea1{
     width: 205px; 
     height: 0px; 
-    left: 216px; 
+    left: 316px; 
     top: 391px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     border: 1px #6667B0 solid;
@@ -220,7 +220,7 @@
 .linea2{
     width: 205px; 
     height: 0px; 
-    left: 463px; 
+    left: 570px; 
     top: 391px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     border: 1px #6667B0 solid;
@@ -228,7 +228,7 @@
 .or{
     width: 54px; 
     height: 44px; 
-    left: 431px; 
+    left: 531px; 
     top: 375px; 
     position: absolute; /*es absoluto para poder posicionarlo*/
     color: black; font-size: 22px; 

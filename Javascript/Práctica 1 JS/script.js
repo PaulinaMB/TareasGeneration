@@ -54,8 +54,8 @@ undefinied: no esta asignado o definido
 
 // let nombre = "Daniel";
 // let invitadxsExtras = 2;
-// let edad = 24;
-// let esMayorEdad = true;
+ let edad = 24;
+ let esMayorEdad = true;
 // let invitadxEspecial = null;
 // let horaDeSalida = undefined;
 
@@ -89,22 +89,23 @@ mejora el rendimiento de nuesto programa*/
 /*parseInt y parseFloat son funciones que se utilizan para convertir cadenas de texto en números, ambas nos ayudan en este cambio */
 
 /*conversion de number a string 
- console.log(typeof String(edad));
+ */
+console.log(typeof (edad));
  console.log(typeof edad.toString());
 
-conversión de boolean a number
+//conversión de boolean a number
 
 let numero = Number(esMayorEdad);
 console.log(typeof(numero));
 
 let texto = String(esMayorEdad);
 console.log(typeof(texto));
-console.log(typeof esMayorEdad.toString()); */
+console.log(typeof esMayorEdad.toString());
 
-// let negación = !esMayorEdad;
-// console.log (negación):
+ let negación = !esMayorEdad;
+ console.log (negación);
 
-/*concatenar basicamente unir strings*/
+/*concatenar basicamente unir strings
 
 let saludo = "Hola humanx ";
 let frase = "el futuro es hoy";
@@ -114,7 +115,7 @@ texto = saludo + frase;
 document.write(texto);
 
 console.log(texto);
-
+*/
 /*hacer una receta para hot cakes 12 personas declarar vars con ingredientes que lleven la cantidad primero como string, luego a number, luego a boolean */
 
 /* Tipos de datos
@@ -135,7 +136,7 @@ console.table();
 
 
 */
-
+/*
 let firstName;
 firstName = "Daniel";
 let lastName;
@@ -148,13 +149,13 @@ console.log("Mi nombre es " +firstName +"y mi apellido es "+lastName)
 <- backticks `
 para variables ${}
 texto para string
-*/
+*//*
 let age=37;
 console.log(`Mi nombre es ${firstName},
 mi apellido es ${lastName}
 y tengo ${age} años`)
 
-
+*/
 console.warn(`Precaucion, no es buena práctica dejar sin punto y coma`);
 
 console.error(`Status 404:failed`);
@@ -165,7 +166,7 @@ console.error(`Status 404:failed`);
 - Los elementos de un array se contabilizan como índices empezando por índice 0, por lo cual el primer elemento del array posee el índice 0.
 - Un array posee n cantidad de elementos.
 - Se declaran como variables, seguido del signo igual y corchetes. Dentro de cada corchete vive un elemento con un tipo de dato.
-*/
+*//*
 let arreglo1 = []; //array vacío
 console.log(`Array vacío ${arreglo1}`);
 //los elemento de un array se separan mediante comas
@@ -187,7 +188,7 @@ Su sintaxis es la siguiente
     }
 Los objetos pueden almacenar diferentes tipos de valores.
 */
-
+/*
 const employee = {
     firstName: "Rey David",
     lastName: "Martinez",
@@ -201,3 +202,4 @@ console.table(cars);
 
 //mostrando mi objetivo como tabla
 console.table(employee);
+*/
