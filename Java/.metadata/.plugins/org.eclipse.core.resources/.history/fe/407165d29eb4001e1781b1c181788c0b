@@ -1,0 +1,93 @@
+package controlFlujo;
+import java.util.Scanner; //se importó para usar la fcn scanner. todas las importaciones se hacen fuera de la clase.
+//scanner es una clase perteneciten a la Java API, permite recibir por parte del usuario una info, como es una clase de Java API hay que importarla. 
+public class FlujoControl {
+
+	public static void main(String[] args) { //Debe coincidir la clase con el nombre del documento/proyecto
+		//Recuerda que para que algo se ejecute, siempre debe de ir en el método principal.
+		//Primero defino una variable del tipo String donde se almacena un dato 
+		/*String viaje = null;*/ //Dejo en null y después agrego fecha 
+		//Variable declarada e incializada, en null a propósito, para tener un "espacio" de memoria ya asignado y solo reemplazarlo con un nuevo dato.
+		
+		//Para validar si podemos viajar en cierta fecha
+		/*
+		if(viaje !=null) { //variable vacía
+			System.out.println("Ya no tenemos fechas disponibles, una disculpa");
+		}else {
+			System.out.println("Puede reservar su viaje");
+		}*/
+		//////////////////////////////////////////
+		//Validación de contraseña
+		Scanner scanner = new Scanner(System.in);
+		//scanner no necesita llamarse scanner, puede ser skaner, etc.
+		//Una vez inicializada Scanner se puede utilizar, solo es necesario importarlo una vez.
+		//una nueva clase que va a actuar como un objeto. System in, scanner va a traer info que ingresará al sist
+		
+		/*
+		//Solicitar la primera contraseña
+		System.out.print("Ingrese la contraseña: ");
+		//out saca algo del sistema
+		String contraseña1 = scanner.nextLine();
+		//Método nextLine, recibe un conjunto de caracteres. Scanner tiene diferentes métodos
+		
+		//Solicitar la segunda contraseña
+		System.out.print("Ingrese la contraseña nuevamente: ");
+		String contraseña2 = scanner.nextLine();
+		
+		//Verificar si las contraseñas coinciden
+		if (contraseña1.equals(contraseña2)) {
+			System.out.println("Las contraseñas coinciden. Acceso permitido");
+		}else {
+			System.out.println("Las contraeñas no coinciden. Acceso denegado");
+		}
+		 
+		 //Cerrar el scanner
+		scanner.close(); //buena practica, si no se cierra no pasa nada, solo en explorador en la clase aparecerá un puntito amarillo. scanner sirve mucho para pruebas técnicas.Sería como un input o un prompt en JS. es la más utilizada para interactuar con el usuario. 
+		 
+		*/
+		 ////////////////////////////////////////////
+		// switch: para seleccionar comida de la dulcería del cine.
+		//seleccion de opciones, variable que almacena dicha opcion.
+		int menu =5;
+		//crear un menu
+		System.out.println("Bienvenido a la dulcería, que desea ordenar?");
+		System.out.println("1. Palomitas");
+		System.out.println("2. Refresco");
+		System.out.println("3. Nachos");
+		System.out.println("4. HotDogs");
+		System.out.println("5. Pagar");
+		//System.out.println("No contamos con eso en nuestro menu, por favor seleccione un opción valida (1-5).");
+		
+		switch(menu) {
+		case 1:
+			System.out.println("Usted ha agregado palomitas.");
+			break;
+		case 2:
+			System.out.println("Usted ha agregado refresco a su combo");
+			break;
+		case 3:
+			System.out.println("Usted ha agregado nachos a su combo");
+			break;
+		case 4:
+			System.out.println("Usted ha agregado hotdog a su combo");
+			break;
+		case 5:
+			System.out.println("Usted ha seleccionado pagar su combo");
+			break;
+		default:
+			System.out.println("Por el momento no contamos con esa opcion en nuestro menu, lo invitamos a seleccionar una opcion valida");
+			break;
+		
+		}//switch
+		 
+	  menu = scanner.nextInt();
+		
+	  	
+	  	
+	  scanner.close();
+		
+		
+		
+	}//main
+
+}//clase

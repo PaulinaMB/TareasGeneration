@@ -1,0 +1,19 @@
+package org.generation.collections;
+//como trabajo con metodo especifico, necesito importar array
+import java.util.Arrays;
+
+public class ArrayListCollections {
+	public static void main(String[] args) {
+		//************ Arrays *************//
+		String[] names = {"Gaby","Lucero", "Diana", "Aldo", "Gonzalo", "Marco","Carlos"};
+		//Método de arrays para imprimir arrays
+		System.out.println(Arrays.toString(names));
+		int[] edades = {12, 3, 8, 15, 17, 16, 23, 24};
+		System.out.println(Arrays.toString(edades));
+		
+	}
+	
+	
+	
+	
+}

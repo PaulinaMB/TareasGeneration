@@ -1,0 +1,39 @@
+package org.generation.collections;
+
+import java.util.HashSet;
+
+public class HashSetCollection {
+	//en vez de args o main se puede poner otra cosa, ya que es solo una convención
+	public static void main(String[] hola) {
+		//HashSet es una clase de Collections donde cada elemento es único, es decir, no se repiten los elementos
+		HashSet<String> animals = new HashSet<String>();
+		animals.add("Buho");
+		animals.add("Caballo");
+		animals.add("Perro");
+		animals.add("Gato");
+		animals.add("Ornitorrinco");
+		animals.add("Cebra");
+		animals.add("Ornitorrinco");
+		animals.add("Mapache");
+		animals.add("Capibara");
+		animals.add("Capibara");
+		animals.add("Capibara");
+		animals.add("Capibara");
+		animals.add("Capibara");
+		animals.add("Capibara");
+		
+		//Imprimir el HashSet
+		System.out.println(animals);
+		
+		//Conocer si un elemento se encuentra dentro del set: contains(); 
+		//contains es de tipo boolean, aplicable para array
+		boolean a = animals.contains("Capibara");
+		System.out.println(a);
+		
+		
+		//Eliminar un elemento: remove();
+		animals.remove("Cebra"); //elimino
+		System.out.println(animals); //Imprimo el set sin el elemento eliminado
+	}
+
+}

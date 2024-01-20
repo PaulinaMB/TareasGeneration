@@ -1,0 +1,13 @@
+package org.generation.collections;
+
+public class ArrayListCollections {
+	public static void main(String[] args) {
+		//************ Arrays *************//
+		String[] names = {"Gaby","Lucero", "Diana", "Aldo", "Gonzalo", "Marco","Carlos"};
+		System.out.println(names);		
+	}
+	
+	
+	
+	
+}

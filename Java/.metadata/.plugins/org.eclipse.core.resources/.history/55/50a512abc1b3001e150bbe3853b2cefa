@@ -1,0 +1,14 @@
+package tiposdeDatosyVariables;
+
+public class EjercicioDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*Comentarios multilinea*/
+		//comentarios de una sola línea
+
+		byte edad = 15; //
+
+	}
+
+}

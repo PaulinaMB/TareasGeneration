@@ -1,0 +1,16 @@
+package controlFlujo;
+
+public class FlujoControl {
+
+	public static void main(String[] args) { //Debe coincidir la clase con el nombre del documento/proyecto
+		//Recuerda que para que algo se ejecute, siempre debe de ir en el método principal.
+		
+		
+	
+		
+		
+		
+		
+	}//main
+
+}//clase

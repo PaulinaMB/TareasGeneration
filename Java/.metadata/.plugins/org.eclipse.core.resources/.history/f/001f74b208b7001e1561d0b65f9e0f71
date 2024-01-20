@@ -1,0 +1,14 @@
+package org.generation.collections;
+
+public class HashSetCollection {
+	//en vez de args o main se puede poner otra cosa, ya que es solo una convención
+	public static void main(String[] hola) {
+		//HashSet es una clase de Collections donde cada elemento es único, es decir, no se repiten los elementos
+		HashSet<String> animal = new HashSet<String>();
+		
+		
+		
+		
+	}
+
+}

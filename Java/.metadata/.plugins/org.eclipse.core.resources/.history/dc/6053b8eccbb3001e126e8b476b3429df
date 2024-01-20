@@ -1,0 +1,37 @@
+package tiposdeDatosyVariables;
+
+public class EjercicioDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hola Mundo");
+		/*Comentarios multilinea*/
+		//comentarios de una sola línea
+		//Tipos de datos enteros 
+
+		byte edad = 15; //Sirve para representar un numero entero 8bits (-128 al 127)
+		
+		System.out.println("Edad del participante"+edad);
+		
+		short usuariosNuevos = 200; //Sirve para representar un numero entero 
+		
+		System.out.println("Usuarios nuevos "+usuariosNuevos);
+		
+		int usuariosTotales = 8752; //sirve para representar un numero entero 32 bits (-2147483648 al 2147483647
+		System.out.println("Usuarios Totales " + usuariosTotales);
+		long usuariosPremium = 9512; //Sirve para representar un numero entero con valores mucho mayores
+		System.out.println("Usuarios premium"+usuariosPremium);
+		
+		//Tipos de datos con numero decimales
+		float altura = 1.70f;//Sirve para representar un valor numerico con numeros decimales, cuyo valor es de 23 bits, puede tener 8 caracteres despues del punto decimal y que tiene que llevar una f al final
+		
+		System.out.println("Altura del usuarix "+altura);
+		
+		double peso = 56;//Sirve para representar valores numericos con decimales, cuyo valor es de 64 bits y puede tener hasta quince caracteres despues del punto decimal
+		
+		//String siempre se inicia con mayúscula.
+		String nombreUsuario = "Paulina";
+		System.out.println("Usuaria "+nombreUsuario);		
+	}
+
+}

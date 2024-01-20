@@ -1,0 +1,13 @@
+package ecommerce;
+
+public class Ecommerce {
+	static class Producto {
+		String nombre;
+		double precio;
+		
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}

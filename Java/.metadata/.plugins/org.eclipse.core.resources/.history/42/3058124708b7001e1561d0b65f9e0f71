@@ -1,0 +1,13 @@
+package org.generation.collections;
+
+public class HashSetCollection {
+	//en vez de args o main se puede poner otra cosa, ya que es solo una convención
+	public static void main(String[] hola) {
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package loops;
+
+public class ForLoop {
+
+	public static void main(String[] args) {
+		/*El ciclo For nos proporciona una forma compacta de iterar sobre valores.
+		 * for (inicialización; condición; contador)
+		 * (incremento/decremento){
+		 * bloque de código 
+		 * }
+		 * */
+		
+		
+		
+	}//método
+
+}//clase

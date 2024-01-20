@@ -1,0 +1,38 @@
+package org.generation.collections;
+import java.util.HashMap;
+import java.util.Map;
+public class HashMapCollection {
+
+	public static void main(String[] args) {
+		/**
+		 * HasMap almacena elementos en pares "clave/valor" y se puede acceder a ellos mediante index.
+		 * No es ordenado y permite datos duplicados.
+		 * Recibirá dos tipos de datos: clave y valor, pueden ser de cualquier clase wrapper
+		 * */
+		HashMap<String, String> capitals = new HashMap<String, String>();
+		//Agregando elementos "clave/valor" (.put)
+		capitals.put("Villahermosa","Tabasco");
+		capitals.put("Monterrey","Nuevo León");
+		capitals.put("Guadalajara","Jalisco");
+		capitals.put("Mérida","Yucatán");
+		capitals.put("Puebla","Puebla");
+		capitals.put("Chetumal","Quintana Roo");
+		capitals.put("Toluca","Estado de México");
+		System.out.println(capitals);
+		
+		//Método perteneciente a la interfaz correspondiente a HashMap
+		//Map.Entry<> es un método de la interfaz Map que representa una entrada en un Map. Toma como argumento los tipos de datos asignados al HashMap. El usuario asigna el nombre de la interfaz y recibe un método .entrySet() que devuelve el conjunto(Set) de las entradas (clase-valor) en el HasMap
+		//De esta manera ya podemos utilizar los métodos de abajo
+		
+		for(Map.Entry<String, String> entry: capitals.entrySet()) {
+			System.out.println(entry.getKey()+ " es la capital de" + entry.getValue());
+		}
+		
+		
+		
+		//Mostrar la clave (.getKey()) y el valor (.getValue()) de manera individual para su manipulación
+		//System.out.println(capitals);
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package org.generation.collections;
+import java.util.HashMap;
+public class HashMapCollection {
+
+	public static void main(String[] args) {
+		/**
+		 * HasMap almacena elementos en pares "clave/valor" y se puede acceder a ellos mediante index.
+		 * No es ordenado y permite datos duplicados.
+		 * Recibirá dos tipos de datos: clave y valor, pueden ser de cualquier clase wrapper
+		 * */
+		HashMap<String, String> capitals = new HashMap<String, String>();
+		//Agregando elementos "clave/valor" (.put)
+		capitals.put("Villahermosa","Tabasco");
+		capitals.put("Monterrey","Nuevo León");
+		capitals.put("Guadalajara","Jalisco");
+		capitals.put("Mérida","Yucatán");
+		capitals.put("Puebla","Puebla");
+		capitals.put("Chetumal","Quintana Roo");
+		capitals.put("Toluca","Estado de México");
+		System.out.println(capitals);
+		
+	}
+
+}

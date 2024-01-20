@@ -1,0 +1,78 @@
+package org.generation.collections;
+import java.util.ArrayList;
+//como trabajo con metodo especifico, necesito importar array
+import java.util.Arrays;
+
+public class ArrayListCollections {
+	public static void main(String[] args) {
+		//************ Arrays *************//
+		String[] names = {"Gaby","Lucero", "Diana", "Aldo", "Gonzalo", "Marco","Carlos"};
+		//Método de arrays para imprimir arrays
+		System.out.println(Arrays.toString(names));
+		int[] edades = {12, 3, 8, 15, 17, 16, 23, 24, 30};
+		System.out.println(Arrays.toString(edades));
+		
+		//Acceder a cada elemento del Array
+		String name1 = names[0];
+		System.out.println("El primer nombre de la lista es " + name1);
+		int edad1 = edades[8];
+		System.out.println("La edad de " + name1 + "es de " + edad1); //La edad de Jonathan es de 25 años
+		//ejecutar: ctrl + fn + f11
+		//Obtener la longitud del Array
+		
+		int longitudNames = names.length;
+		System.out.println("El Array names tiene " + longitudNames + " elementos");
+		
+		//Obtener el último elemento
+		//String ultimoElemento = names[longitudNames - 1];//La longitud ya vive en la variable `longitud names`
+		
+		String ultimoElemento = names[names.length - 1];//La longitud NO vive en una variable 
+		
+		System.out.println("El último elemento del Array name es " + ultimoElemento); //Carlos
+		
+		//Mostrar cada elemento utilizando foreach
+		//La variable nombre puedo nombrarla como quiera
+		// ":" significa que va a iterar sobre la variable en este caso name (la cual está de manera estática definida como String)
+		for (String nombre : names) {
+			System.out.println(nombre);
+		}
+		
+		//Para soportes en bakcend trabajmos con ArrayList
+		
+		//******************* ArrayList *************//
+		//ArrayList es un array que puede cambiar de tamaño. Es la clase de Java que representa la estructura de datos de Arrays. Permite elementos duplicados y recibe varios métodos para su manipulación.
+		
+		//no nos vamos a meter con interfaces por ahora, sino como clase
+		
+		ArrayList<String> films = new ArrayList<String>(); //hace falta importar de java api util 
+		//wrapper class
+		ArrayList<Integer> matricula = new ArrayList<>(); //no es buena práctica, la buena práctica es siempre definir el dato
+		ArrayList<Character> characters = new ArrayList<Character>();
+		
+		//Agregar elementos
+		films.add("Inception");
+		films.add("Se7en");
+		films.add("The Shining");
+		films.add("Pulp fiction");
+		films.add("Mr nobody");
+		films.add("The shutter island");
+		films.add("Ready Player One");
+		
+		System.out.println(films);
+		
+		//Obtener un elemento: name.get(index);
+		
+		String film1 = films.get(0);
+		System.out.println("La primer película es " + film1);
+		
+		//Modificar un elemento: name.set(index, newValue)
+		String film3 = films.set(3,"Memento");
+		
+		System.out.println(film3);
+		
+		
+		
+		
+	}
+	
+}

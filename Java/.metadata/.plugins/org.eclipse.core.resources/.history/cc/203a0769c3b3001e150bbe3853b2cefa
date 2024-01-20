@@ -1,0 +1,17 @@
+package tiposdeDatosyVariables;
+
+public class EjercicioDatos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hola Mundo");
+		/*Comentarios multilinea*/
+		//comentarios de una sola línea
+
+		byte edad = 15; //Sirve para representar un numero entero 8bits (-128 al 127)
+		
+		System.out.println("Edad del participante"+edad);
+
+	}
+
+}
